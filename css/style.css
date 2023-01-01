@@ -1,0 +1,151 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: blue orange;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: silver;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 20px;
+  border: 1px solid silver;
+}
+html{
+	scroll-behavior:smooth;
+}
+body{
+    background-color: #95a09d;
+}
+header{
+	height:300px;
+    box-shadow: 0px 0px 5px #000000;
+    background-image: url(../2022.jpeg);
+    background-position: center;
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+header h1{
+    font-family: 'Lobster', sans-serif;
+	font-size:20px;
+	color:#95a09d;
+	text-align:right;
+	padding-top:268px;
+	padding-right:10px;
+}
+h3{
+	font-family: 'Bebas Neue', sans-serif;
+	text-align: center;
+	color: white;
+	font-size:20px;
+}
+h2{
+	font-family: 'Lobster', sans-serif;
+	text-align: center;
+	color: black;
+	font-size:20px;
+}
+section{
+    margin: 0px 15px;
+    column-count: 4;
+	
+}
+section div{
+    margin-bottom: 15px;
+    overflow: hidden;
+    break-inside: avoid-column;
+	transition:2s;
+}
+section div img, section div video{
+    display: block;
+    width: 100%;
+	border-radius: 10px;
+	transition:2s;
+}
+section div img:hover, section div video:hover{
+	transition:2s;
+	filter:opacity(70%);
+}
+div h2{
+    font-family: 'Bebas Neue', sans-serif;
+	text-align: right;
+	color: white;
+	font-size:15px;
+}
+div p{
+    font-family: 'Bebas Neue', sans-serif;
+	font-size:15px;
+	text-align:center;
+}
+.botao{
+	text-align:center;
+	margin:0.5% 30%;
+	padding:10px 5px;
+	border-radius:5px;
+	background-color:silver;
+}
+.botao img{
+	width:20px;
+}
+.botao img:hover{
+	transition:2s;
+	filter:opacity(70%);
+}
+.senai, .my, .family, .melhores, .etec{
+	margin:0px 15px;
+	padding:10px 5px;
+	border-radius:15px;
+	background-color:silver;
+}
+#container,#container1,#container2,#container3,#container4{
+	display:none;
+}
+
+@media(max-width: 1000px){
+    section{
+        column-count: 3;
+		margin:15px;
+    }
+}
+@media(max-width: 530px){
+    section{
+        column-count: 2;
+		margin:15px;
+    }
+}
+@media(max-width: 600px){
+    header{
+		height:200px;
+    }
+	header h1{
+		padding-top:175px;
+		font-size:13px;
+    }
+}
+@media(max-width: 400px){
+    header{
+		height:150px;
+    }
+	header h1{
+		padding-top:130px;
+		font-size:10px;
+    }
+}
+@media(max-width: 300px){
+    header{
+		height:100px;
+    }
+	header h1{
+		padding-top:80px;
+    }
+}

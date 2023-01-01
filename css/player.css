@@ -1,0 +1,109 @@
+.player{
+    height: 450px;
+    width: 50%;
+    padding: 10px 15px;
+    margin: 20px auto;
+    background: #f5f6f7;
+    box-shadow: -4px -2px 4px 0px #ffffff,4px 2px 6px 0 #dfe4ea;
+    border-radius: 15px;
+    position: relative;
+}
+.header{
+    height: 40px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.header h1{
+	font-family: 'Bebas Neue', sans-serif;
+	font-size:30px;
+	color:#95a09d;
+}
+.information{
+    margin: 1.5rem 0;
+    text-align: center;
+}
+.information h1{
+    font-family: 'Lobster', sans-serif;
+	font-size:20px;
+	color:#95a09d;
+}
+.image{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+	margin: 1rem auto;
+    border-radius: 50%;
+    border: 3px solid #B3B6B7;
+	box-shadow: 0px 0 20px black;
+}
+.image img{
+	width:100%;
+}
+.progress{
+	height:50px;
+}
+.progress-time{
+    padding: 3px 5px;
+    color: #9c9c9c;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    display:none;
+}
+ul .buttons{
+    margin: 5px 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+ul .button{
+    color: #9c9c9c;
+    border-radius: 50%;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -4px -2px 4px 0px #ffffff,4px 2px 6px 0 #dfe4ea;
+}
+ul .button-md{
+    width: 40px;
+	height:40px;
+    opacity: 0.85;
+}
+ul .button-lg{
+    width: 55px;
+    height: 55px;
+    opacity: 1; 
+}
+ul div .playpause.active{
+    box-shadow: inset -2px -2px 6px rgba(255,255,255,0.8), inset 2px 2px 6px rgba(0 ,0,0,0.1);
+}
+ul div .fa-play{
+    display: block;
+}
+ul div .fa-pause{
+    display: none;
+}
+ul div .playpause.active .fa-play{
+    display: none;
+}
+ul div .playpause.active .fa-pause{
+    display:block;
+}
+.bar{
+    width: 50%;
+    height: 2px;
+    margin: auto;
+    background: #9c9c9c;
+    border-radius: 25px;
+    position: absolute;
+    transform: translate(-50% , -50%) ;
+    left: 50%;
+    bottom: 1rem;
+}
